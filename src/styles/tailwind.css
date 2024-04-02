@@ -21,29 +21,24 @@
 
     h1 {
         font-family: 'montserrat', sans-serif;
-        font-style: normal;
         font-weight: 900;
         font-size: 96px;
     }
 
     h2 {
         font-family: 'montserrat', sans-serif;
-        font-style: normal;
         font-weight: 800;
         font-size: 56px;
     }
 
     h3 {
         font-family: 'montserrat', sans-serif;
-        font-style: normal;
         font-weight: 700;
         font-size: 40px;
     }
 
     p {
-        font-family: 'montserrat', sans-serif;
-        font-style: normal, italic;
-        font-weight: 400, 700;
+        font-family: 'Public Sans', sans-serif;
         font-size: 20px;
     }
   }
