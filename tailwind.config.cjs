@@ -7,4 +7,12 @@ module.exports = {
         require('@tailwindcss/aspect-ratio'),
         require('@tailwindcss/container-queries'),
     ],
+    theme: {
+        extend: {
+            fontFamily: {
+                'unica': ['montserrat', 'sans-serif'],
+                'grotesk': ['Public Sans', 'sans-serif'],
+            },
+        },
+    },
   };
