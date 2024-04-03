@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+import Hero from "../assets/hero.svg";
+import Heromobil from "../assets/hero_mobil.svg";
+---
+
+
+<!-- <section >
+    <div class="ml-24">
+        <h1 class="mt-24 text-primary-100"><span class="hashtag">#</span>SINGLEUSESUCKS</h1>
+        <h2 class="-mt-6 text-tertiary-100">kampen mod plastik i havet</h2>
+    </div>
+    <Image src={Hero} alt="skrald i hav" class="mt-36 w-full" />
+    <Image src={Heromobil} alt="skrald i hav" class="mt-36 w-full" />
+</section> -->
+
+
+<section class="relative">
+    <div class="ml-24">
+        <h1 class="mt-24 text-primary-100"><span class="hashtag">#</span>SINGLEUSESUCKS</h1>
+        <h2 class="-mt-6 text-tertiary-100">kampen mod plastik i havet</h2>
+    </div>
+    
+    <!-- Vis Hero-billedet på desktop -->
+    <div class="hidden md:block">
+        <Image src={Hero} alt="skrald i hav" class="mt-36 w-full" />
+    </div>
+
+    <!-- Vis Heromobil-billedet på mobil -->
+    <div class="md:hidden">
+        <Image src={Heromobil} alt="skrald i hav" class="" />
+    </div>
+</section>
+
+
+
+<style>
+.hashtag {
+    color: #528FA4;
+     font-weight: 900;
+     font-style: normal;
+}
+
+
+</style>
