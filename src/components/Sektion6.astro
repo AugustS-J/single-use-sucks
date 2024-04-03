@@ -4,11 +4,13 @@ import tshirt from "../assets/images/tshirt.webp";
 import kop from "../assets/images/kop.webp";
 import vandflaske from "../assets/images/vandflaske.webp";
 import Button from '../components/Button.astro';
+import Footer from "../assets/footer.svg";
 
 ---
 
-<section id="merchandise" class="bg-accent-100 text-highlight-100">
-    <h2 class="text-center py-12">Støt os med merchandise!</h2>
+<section id="merchandise" class=" text-highlight-100">
+              <Image src={Footer} alt="skrald i hav" class="absolute w-full -z-50" />
+    <h2 class="text-center py-12 pt-40">Støt os med merchandise!</h2>
  <div class="grid grid-cols-2 px-40 pb-12 gap-12">
     <div>
         <p class="pb-8">Du kan også støtte ved at købe vores lækre merchandize! Gør en forskel og støt kampen mod plastik i havet med dit køb.</p>
