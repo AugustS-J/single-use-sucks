@@ -1,0 +1,37 @@
+---
+import Image from "astro/components/Image.astro";
+import tshirt from "../assets/images/tshirt.webp";
+import kop from "../assets/images/kop.webp";
+import vandflaske from "../assets/images/vandflaske.webp";
+import Button from '../components/Button.astro';
+
+---
+
+<section id="merchandise" class="bg-accent-100 text-highlight-100">
+    <h2 class="text-center py-12">Støt os med merchandise!</h2>
+ <div class="grid grid-cols-2 px-40 pb-12 gap-12">
+    <div>
+        <p class="pb-8">Du kan også støtte ved at købe vores lækre merchandize! Gør en forskel og støt kampen mod plastik i havet med dit køb.</p>
+        <p>Besøg shoppen og tjek produkterne ud.</p>
+        <Button variant="primary">Shop her!</Button>
+    </div>
+    <div></div>
+    </div>
+    <div class="grid grid-cols-3 px-40 pb-12 gap-12">
+    <div class="outline hover:outline-offset-2">
+        <Image src={kop} alt="kop"></Image>
+        <p class="bg-white text-black pl-3 text-lg">Emaljekrus "PLASTIC CHANGE"</p>
+        <p class="bg-white text-black pl-3 text-base">129,00 kr.</p>
+    </div>
+    <div class="outline hover:outline-offset-2">
+    <Image src={vandflaske} alt="vandflaske"></Image>
+    <p class="bg-white text-black pl-3 text-lg">Drikkedunk "PLASTIC CHANGE"</p>
+    <p class="bg-white text-black pl-3 text-base">199,00 kr.</p>
+    </div>
+    <div class="outline hover:outline-offset-2">
+        <Image src={tshirt} alt="tshirt"></Image>
+        <p class="bg-white text-black pl-3 text-lg">Tee "PLASTIC CHANGE" - Unisex</p>
+        <p class="bg-white text-black pl-3 text-base">329,00 kr.</p>
+    </div>
+  </div>
+</section>
