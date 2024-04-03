@@ -1,6 +1,48 @@
 ---
+import { Image } from "astro:assets";
+import Footer from "../assets/footer.svg";
+import Button from '../components/Button.astro';
+
 ---
 <div>
-  <p>Footer</p>
+          <Image src={Footer} alt="skrald i hav" class="mt-36 w-full" />
+        <div class="flex justify-center ">
+          <div class="grid grid-cols-3 text-secondary-100 absolute -mt-96 gap-x-20 ">
+            <div>
+              <a href="https://plasticchange.dk/">plasticchange.dk</a>
+            </div>
+            <div class="">
+              <ul >
+                <div class="pb-8">
+                    <li>
+                    <p class="bold">Kontakt info</p>
+                  </li>
+                  <li>
+                    <a href="#" class="icon fa-envelope"><span class="label">Mail</span></a>
+                  </li>
+                   <li>
+                    <a href="#" class=""><span class="label">Tlf:   +45 42 66 72 46</span></a>
+                  </li>
+                </div  >
+                <div>
+                                    <li>
+                    <p>
+                      Telefontid: Mandag - Fredag.
+                    </p>
+                    <p>
+                      10.00-15.00
+                    </p>
+                  </li>
+                </div>
+
+              </ul>
+            </div>
+            <div>
+              <p>
+                Tilmeld nyhedsbrev her!
+              </p>
+                <Button variant="secondary"><p>E-mail adresse</p></Button>
+     </div>
 </div>
+
   
