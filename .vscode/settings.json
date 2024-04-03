@@ -1,0 +1,5 @@
+{
+  "editor.indentSize": "tabSize",
+  "prettier.enableLanguage": "astro",
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

@@ -1,0 +1,30 @@
+---
+import Image from "astro/components/Image.astro";
+import cleaning from "../assets/images/cleaning.svg";
+import fish_plastic from "../assets/images/fish_plastic.svg";
+import plasticwhale from "../assets/images/plasticwhale.svg";
+import skraldebil from "../assets/images/skraldebil.svg";
+---
+
+<section id="problemet_med_plastikforurening" class="bg-secondary-100 text-primary-100">
+  <h2 class="text-center py-12">Problemet med plastikforurening</h2>
+  <p class="px-40 text-justify pb-12">Plastikforurening truer vores planet og dens økosystemer. Følgende statistikker understreger alvoren af plastikforureningens påvirkning på miljøet, sundheden, økonomien og klimaet, og viser hvor stort behovet er for handling på globalt plan for at tackle udfordringen.</p>
+  <div class="grid grid-cols-2 px-40 pb-12 gap-9">
+    <Image src={fish_plastic} alt="fish_plastic" />
+    <div class="flex items-center justify-center">
+      <p>Ifølge The Ellen MacArthur Foundation forventes der at være mere plastik end fisk i havene inden 2050.</p>
+    </div>
+    <div class="flex items-center justify-center">
+      <p>Hvert år ender 8 millioner tons plastik i havene, hvilket svarer til at der dumpes en lastbil fuld af plastik i havet hvert minut.</p>
+    </div>
+    <Image src={skraldebil} alt="skraldebil" />
+    <Image src={plasticwhale} alt="plasticwhale" />
+    <div class="flex items-center justify-center">
+      <p>Op mod 100.000 havpattedyr dør hvert år som følge af plastikforurening, ifølge National Geographic.</p>
+    </div>
+    <div class="flex items-center justify-center">
+      <p>Ifølge FN koster det årligt mellem 13 og 33 milliarder dollars at rydde op efter plastikforurening på verdensplan.</p>
+    </div>
+    <Image src={cleaning} alt="cleaning" />
+  </div>
+</section>

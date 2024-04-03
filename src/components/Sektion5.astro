@@ -1,0 +1,30 @@
+---
+import Donationsknap from "../components/Donationsknap.astro";
+---
+
+<section id="saadan_kan_du_stoette" class="bg-primary-100 text-highlight-100">
+  <h2 class="text-center py-12">Støt os i kampen mod plastikforurerning!</h2>
+  <div class="flex flex-wrap px-40 pb-12 gap-12">
+    <div class="w-1/2 p-4">
+      <h3 class="text-tertiary-100 pb-6">Du kan beskytte naturen, dyrelivet og vores børn imod plastik!</h3>
+      <p class="">Plastikforurening truer livet i havet og på jorden. Kun med din støtte kan vi kæmpe for, at politikere og virksomheder tager ansvar for at standse overproduktion og forurening fra plastik nu, og at vi kan uddanne fremtidens forbrugere. Du bliver en del af en global Plastic Changer bevægelse, der siger: STOP PLASTIKFORURENING NU!</p>
+    </div>
+    <form class="w-2/1 p-4">
+      <h4 class="text-xl">Hvor ofte vil du støtte os?</h4>
+      <div class="py-6">
+        <div class="py-2">
+          <input type="radio" name="betaling_type" id="betaling_maanedlig" class="rounded-full border-2 border-white checked:border-2 checked:border-red-500 bg-white checked:bg-red-500" />          
+          <label for="betaling_maanedlig">Månedligt</label>
+        </div>
+        <div class="py-2">
+          <input type="radio" name="betaling_type" id="en_gang" class="rounded-full border-2 border-white checked:border-2 checked:border-red-500 bg-white checked:bg-red-500" />
+          <label for="en_gang">Én gang</label>
+        </div>
+      </div>
+      <h4 class="text-xl">Hvor meget vil du donere?</h4>
+      <div class="flex space-x-4 py-6 button-container">
+        <Donationsknap />
+      </div>
+    </form>
+  </div>
+</section>
