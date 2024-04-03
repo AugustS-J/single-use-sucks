@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import Hero from "../assets/hero.svg";
 import Heromobil from "../assets/hero_mobil.svg";
+import Button from '../components/Button.astro';
 ---
 
 
@@ -19,7 +20,9 @@ import Heromobil from "../assets/hero_mobil.svg";
     <div class="ml-24">
         <h1 class="mt-24 text-primary-100"><span class="hashtag">#</span>SINGLEUSESUCKS</h1>
         <h2 class="-mt-6 text-tertiary-100">kampen mod plastik i havet</h2>
-        
+        <div class="mt-20">
+         <Button variant="secondary"><p>Læs om hvordan du kan støtte!</p></Button>
+        </div>
     </div>
     
     <!-- Vis Hero-billedet på desktop -->

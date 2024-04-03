@@ -1,10 +1,11 @@
 ---
+import Button from '../components/Button.astro';
 ---
 <section>
   <div class="p-8">
-    <nav class="list-none flex justify-end ">
+    <nav class="list-none flex justify-end text-primary-100 font-medium">
         
-      <div class="flex gap-20 ">
+      <div class="flex gap-20 items-center">
         <div class="">
           <li><a href="#sektion2">Hvad skal jeg vide?</a></li>
         </div>
@@ -14,8 +15,12 @@
         <div class="">
           <li><a href="#sektion4">Vores mission</a></li>
         </div>
+        <div>
+          <Button variant="primary"><p class="px-4">støt</p></Button>
+        </div>
+        
       </div>
-      <button></button>
+         
     </nav>
 
   </div>  
