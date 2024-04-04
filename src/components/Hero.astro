@@ -22,10 +22,13 @@ import Sektion1 from '../components/Sektion1.astro';
         <h1 class="mt-24 text-primary-100"><span class="hashtag">#</span>SINGLEUSESUCKS</h1>
         <h2 class="-mt-6 text-tertiary-100">kampen mod plastik i havet</h2>
         <div class="mt-20">
-         <Button variant="secondary"><p>Læs om hvordan du kan støtte!</p></Button>
+            <a href="#sektion1">
+                <Button variant="secondary"><p>Læs om hvordan du kan støtte!</p></Button>
+            </a>
         </div>
     </div>
-            <Sektion1 />
+
+         <Sektion1 /> 
     <!-- Vis Hero-billedet på desktop -->
     <div class="hidden md:block">
         <Image src={Hero} alt="skrald i hav" class="mt-36 w-full" />
@@ -48,5 +51,7 @@ import Sektion1 from '../components/Sektion1.astro';
      font-style: normal;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 </style>
