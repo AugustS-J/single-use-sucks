@@ -46,14 +46,26 @@
     </article>
 </section>
 <script>
-    import {animate, stagger, inView, scroll} from "motion";
+    import {animate, stagger, inView} from "motion";
     inView( ".missioninview" , () =>{
         animate( ".missioninview", { opacity: [0, 1] }, { duration: 2 })
-    })
+        
+        return () => {
+            animate(
+        ".missioninview",
+        { opacity: [0, 1] })
+    }
+});
 
     inView(".missionerinview", ({ target }) =>{
         animate(target.querySelectorAll(".mission1, .mission2, .mission3"), { x: [-2000, 0] },
         { duration: 1, delay: stagger(0.5, { start: 0.25 })
     })
+    
+    return () => {
+        animate(
+            target.querySelectorAll(".mission1, .mission2, .mission3"),
+            { x: [-2000, 0] })
+        }
     })
 </script>
