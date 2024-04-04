@@ -93,7 +93,7 @@
     </article>
 </section>
 <script>
-    import {animate, stagger, inView, scroll, timeline} from "motion";
+    import {animate, stagger, inView, scroll} from "motion";
 
     const items = document.querySelectorAll("#horisontalliste li");
     scroll(
@@ -111,5 +111,11 @@
                 delay: stagger(0.7, { start: 0.2 })
             }
         )
+        return () => {
+            animate(
+            ".staggeranimation div",
+            { opacity: [0, 1] }
+            )
+        }
     })
 </script>
