@@ -4,36 +4,20 @@ import tshirt from "../assets/images/tshirt.webp";
 import kop from "../assets/images/kop.webp";
 import vandflaske from "../assets/images/vandflaske.webp";
 import Button from '../components/Button.astro';
-import Footer from "../assets/footer.svg";
+import stoet from '../assets/images/stoet.jpg';
 
 ---
 
-<section id="merchandise" class=" text-highlight-100">
-              <Image src={Footer} alt="skrald i hav" class="absolute w-full -z-50" />
-    <h2 class="text-center py-12 pt-40">Støt os med merchandise!</h2>
+<section id="merchandise" class="bg-tertiary-100 text-highlight-100">
+    <h2 class="text-center py-12">Støt os med merchandise!</h2>
  <div class="grid grid-cols-2 px-40 pb-12 gap-12">
     <div>
-        <p class="pb-8">Du kan også støtte ved at købe vores lækre merchandize! Gør en forskel og støt kampen mod plastik i havet med dit køb.</p>
-        <p>Besøg shoppen og tjek produkterne ud.</p>
+        <p class="pb-8">Du kan også støtte ved at købe vores lækre merchandise! Gør en forskel og støt os i kampen mod plastik i havet med dit køb.</p>
+        <p class="pb-12">Besøg shoppen og tjek produkterne ud!</p>
         <Button variant="primary"><p>Shop her!</p></Button>
     </div>
-    <div></div>
+    <div>
     </div>
-    <div class="grid grid-cols-3 px-40 pb-12 gap-12">
-    <div class="outline hover:outline-offset-2">
-        <Image src={kop} alt="kop"></Image>
-        <p class="bg-white text-black pl-3 text-lg">Emaljekrus "PLASTIC CHANGE"</p>
-        <p class="bg-white text-black pl-3 text-base">129,00 kr.</p>
-    </div>
-    <div class="outline hover:outline-offset-2">
-    <Image src={vandflaske} alt="vandflaske"></Image>
-    <p class="bg-white text-black pl-3 text-lg">Drikkedunk "PLASTIC CHANGE"</p>
-    <p class="bg-white text-black pl-3 text-base">199,00 kr.</p>
-    </div>
-    <div class="outline hover:outline-offset-2">
-        <Image src={tshirt} alt="tshirt"></Image>
-        <p class="bg-white text-black pl-3 text-lg">Tee "PLASTIC CHANGE" - Unisex</p>
-        <p class="bg-white text-black pl-3 text-base">329,00 kr.</p>
     </div>
   </div>
 </section>
