@@ -6,16 +6,16 @@ import Button from '../components/Button.astro';
 ---
 <div class="pt-96">
           <!-- <Image src={Footer} alt="skrald i hav" class="mt-36 w-full" /> -->
-        <div class="flex justify-center pt-72">
+        <div class="flex justify-center pt-52">
           <div class="grid grid-cols-3 text-secondary-100   gap-x-20 ">
             <div>
-              <a href="https://plasticchange.dk/">plasticchange.dk</a>
+              <a class="font-extrabold" href="https://plasticchange.dk/">plasticchange.dk</a>
             </div>
             <div class="">
-              <ul >
-                <div class="pb-8">
+              <ul class="grid gap-6">
+                <div class="pb-8 grid gap-2">
                     <li>
-                    <p class="bold">Kontakt info</p>
+                    <p class="font-extrabold pb-2">Kontakt info</p>
                   </li>
                   <li>
                     <a href="#" class="icon fa-envelope"><span class="label">Mail</span></a>
@@ -24,8 +24,8 @@ import Button from '../components/Button.astro';
                     <a href="#" class=""><span class="label">Tlf:   +45 42 66 72 46</span></a>
                   </li>
                 </div  >
-                <div>
-                                    <li>
+                <div >
+                    <li class="pb-8 grid gap-2">
                     <p>
                       Telefontid: Mandag - Fredag.
                     </p>
@@ -38,10 +38,12 @@ import Button from '../components/Button.astro';
               </ul>
             </div>
             <div>
-              <p>
+              <p class="font-extrabold pb-4">
                 Tilmeld nyhedsbrev her!
               </p>
-                <Button variant="secondary"><p>E-mail adresse</p></Button>
+            <form action="">
+              <input class="px-6 py-3 border-4 rounded-lg text-xl bg-transparent border border-accent-100 text-accent-100" type="text" id="lname" name="lname" placeholder="Email" /><br />
+            </form>
      </div>
 </div>
 
