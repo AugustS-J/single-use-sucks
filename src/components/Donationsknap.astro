@@ -1,13 +1,5 @@
 ---
-const initialValue = [100, 200, 300];
+
 ---
-<div class="button-container">
-  {initialValue.map((value, index) => (
-    <button
-      class="bg-highlight-100 mx-2 text-accent-100 border-4 border-accent-100 hover:text-highlight-100 hover:bg-accent-100 hover:border-highlight-100 p-5 rounded-full"
-      key={`button-${index}`}
-    >
-      {value}
-    </button>
-  ))}
-</div>
+  <button class="bg-white border-3 hover:bg-accent-100 border border-accent-100 hover:border-highlight-100 border-10 text-accent-100 hover:text-highlight-100 font-bold p-5 rounded-full"><slot /></button>
+
