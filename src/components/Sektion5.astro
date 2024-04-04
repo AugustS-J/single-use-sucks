@@ -17,16 +17,25 @@ import Button from '../components/Button.astro';
           <input type="radio" name="betaling_type" id="betaling_maanedlig" class="rounded-full border-2 border-white checked:border-2 checked:border-red-500 bg-white checked:bg-red-500" />          
           <label for="betaling_maanedlig">Månedligt</label>
         </div>
-        <div class="py-2">
+        <div class="py-2 pb-10 pt-6">
           <input type="radio" name="betaling_type" id="en_gang" class="rounded-full border-2 border-white checked:border-2 checked:border-red-500 bg-white checked:bg-red-500" />
           <label for="en_gang">Én gang</label>
         </div>
       </div>
       <h4 class="text-xl">Hvor meget vil du donere?</h4>
-      <div class="flex space-x-4 py-6 button-container">
-        <Donationsknap />
+      <div class="flex space-x-4 py-6 pb-12">
+
+        <Donationsknap>100</Donationsknap>
+         <Donationsknap>200</Donationsknap>
+          <Donationsknap>300</Donationsknap>
+        
       </div>
        <Button variant="primary"><p>Støt nu!</p></Button>
     </form>
   </div>
 </section>
+<script>
+    import { animate, stagger, inView, scroll, timeline } from "motion";
+
+    animate( "h2", { opacity: [ 0, 1] }, { duration: 10 })
+</script>

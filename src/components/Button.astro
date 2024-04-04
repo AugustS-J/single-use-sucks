@@ -1,13 +1,12 @@
 ---
 const { variant } = Astro.props; 
-const buttonStyling = "px-3 py-2 "; 
+const buttonStyling = "px-6 py-3 rounded-lg text-xl border border-10"; 
 const variantClasses = {
 
-"primary": "bg-accent-100 hover:bg-highlight-100 border-5 border-accent-100 hover:border-highlight-100 text-highlight-100 hover:text-accent-100 rounded text-xl",
-"secondary": "hover:bg-accent-100 border-5 border-highlight-100 hover:border-accent-100 text-accent-100 hover:text-highlight-100 rounded",
+"primary": "bg-accent-100 hover:bg-highlight-100 border border-accent-100 text-highlight-100 hover:text-accent-100",
+"secondary": "hover:bg-accent-100 border border-accent-100 text-accent-100 hover:text-highlight-100",
 
 };
-
 ---
 <div>
     <button class:list={[buttonStyling, variantClasses[variant]]}><slot /></button>
