@@ -2,8 +2,8 @@
 ---
 
 
-<section class="pb-24 -mt-48 ml-24">
-    <div class="absolute -mt-96 ml-64 text-secondary-100 sticky top-0 h-screen">
+<!-- <section class="pb-24 -mt-48 ml-24">
+    <div class="absolute -mt-96 ml-64 text-secondary-100 sticky top-10 h-screen">
         <h3>Hvad er plastikforurening?</h3>
         <p class="italic">“Plastik definerer vores kultur. Vi må ikke lade den definere vores fremtid.”</p>
         <p class="pt-5">Henrik Beha Pedersen, 2014</p>
@@ -13,6 +13,119 @@
         <p>Plastikforurening opstår, når plastikmaterialer ikke nedbrydes naturligt og ender i naturen. Det omfatter alt fra plastikposer til mikroplastpartikler, der skader miljøet og dyreliv. Plastikforurening er en alvorlig trussel mod vores økosystemer og har betydelige konsekvenser for både naturen og menneskers sundhed. Bekæmpelse af plastikforurening er afgørende for at bevare vores planet og sikre en bæredygtig fremtid.</p>
 
     </div>
+</section> -->
+
+
+
+
+
+
+
+
+<!-- 
+
+<section class="pb-24 -mt-48 ml-24 ">
+    <div class="absolute -mt-96 ml-64 text-secondary-100 h-screen w-100 parallaxcontainer">
+        <h3>Hvad er plastikforurening?</h3>
+        <p class="italic">“Plastik definerer vores kultur. Vi må ikke lade den definere vores fremtid.”</p>
+        <p class="pt-5">Henrik Beha Pedersen, 2014</p>
+    </div>
+        <div class="text-secondary-100 ml-64 w-5/12 h-screen w-100 parallaxcontainer">
+
+        <p>Plastikforurening opstår, når plastikmaterialer ikke nedbrydes naturligt og ender i naturen. Det omfatter alt fra plastikposer til mikroplastpartikler, der skader miljøet og dyreliv. Plastikforurening er en alvorlig trussel mod vores økosystemer og har betydelige konsekvenser for både naturen og menneskers sundhed. Bekæmpelse af plastikforurening er afgørende for at bevare vores planet og sikre en bæredygtig fremtid.</p>
+
+    </div>
 </section>
 
 
+
+
+
+
+<script>
+    document.querySelectorAll(".parallaxcontainermedflereelementer").forEach(( parallaxcontainer ) => {
+  const elementderskalparallaxes2 = parallaxcontainer.querySelector(".paragraf2");
+  scroll(animate(elementderskalparallaxes2, { y: [ 0, 800] }), { target: elementderskalparallaxes2 });
+});
+</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <section class="pb-24 -mt-48 ml-24 relative overflow-hidden">
+    <div class="absolute -mt-96 ml-64 text-secondary-100 h-screen w-100 parallax-element">
+        <h3>Hvad er plastikforurening?</h3>
+        <p class="italic">“Plastik definerer vores kultur. Vi må ikke lade den definere vores fremtid.”</p>
+        <p class="pt-5">Henrik Beha Pedersen, 2014</p>
+    </div>
+    <div class="text-secondary-100 ml-64 w-5/12 h-screen w-100 parallax-element">
+        <p>Plastikforurening opstår, når plastikmaterialer ikke nedbrydes naturligt og ender i naturen. Det omfatter alt fra plastikposer til mikroplastpartikler, der skader miljøet og dyreliv. Plastikforurening er en alvorlig trussel mod vores økosystemer og har betydelige konsekvenser for både naturen og menneskers sundhed. Bekæmpelse af plastikforurening er afgørende for at bevare vores planet og sikre en bæredygtig fremtid.</p>
+    </div>
+</section>
+
+<style>
+    .parallax-element {
+        transform: translateY(-50%);
+        transition: transform 0.5s ease;
+    }
+</style>
+
+<script>
+        import {animate, stagger, inView, scroll, timeline} from "motion";
+
+    window.addEventListener('scroll', function() {
+        var parallaxElements = document.querySelectorAll('.parallax-element');
+        parallaxElements.forEach(function(element) {
+            var distanceFromTop = element.getBoundingClientRect().top;
+            var translateValue = -distanceFromTop * 0.5;
+            element.style.transform = 'translateY(' + translateValue + 'px)';
+        });
+    });
+</script> -->
+
+
+
+
+
+
+
+
+<section class="absolute -mt-96 h-screen w-100 parallaxcontainermedflereelementer">
+    <div  class="w-1/2 mx-auto p-10 text-secondary-100 e">
+        <h3>Hvad er plastikforurening?</h3>
+        <p class="italic">“Plastik definerer vores kultur. Vi må ikke lade den definere vores fremtid.”</p>
+        <p class="pt-5">Henrik Beha Pedersen, 2014</p>
+    </div>
+
+        </div>
+        <div class="text-secondary-100 ml-64 w-5/12 e2">
+
+        <p>Plastikforurening opstår, når plastikmaterialer ikke nedbrydes naturligt og ender i naturen. Det omfatter alt fra plastikposer til mikroplastpartikler, der skader miljøet og dyreliv. Plastikforurening er en alvorlig trussel mod vores økosystemer og har betydelige konsekvenser for både naturen og menneskers sundhed. Bekæmpelse af plastikforurening er afgørende for at bevare vores planet og sikre en bæredygtig fremtid.</p>
+
+    </div>
+
+</section>
+
+
+
+<script>
+        import {animate, stagger, inView, scroll, timeline} from "motion";
+
+document.querySelectorAll(".parallaxcontainermedflereelementer").forEach(( parallaxcontainer ) => {
+  const elementderskalparallaxes2 = parallaxcontainer.querySelector(".e");
+  scroll(animate(elementderskalparallaxes2, { y: [ 0, 800] }), { target: elementderskalparallaxes2 });
+});
+
+document.querySelectorAll(".parallaxcontainermedflereelementer").forEach(( parallaxcontainer ) => {
+  const elementderskalparallaxes2 = parallaxcontainer.querySelector(".e2");
+  scroll(animate(elementderskalparallaxes2, { y: [ 0, 800] }), { target: elementderskalparallaxes2 });
+});
+</script>
