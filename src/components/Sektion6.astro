@@ -5,10 +5,12 @@ import kop from "../assets/images/kop.webp";
 import vandflaske from "../assets/images/vandflaske.webp";
 import Button from '../components/Button.astro';
 import stoet from '../assets/images/stoet.jpg';
+import Footer from "../assets/footer.svg";
 
 ---
 
-<section id="merchandise" class="bg-tertiary-100 text-highlight-100">
+<section id="merchandise" class=" text-highlight-100 ">
+              <Image src={Footer} alt="skrald i hav" class="absolute w-full -z-50 " />
     <h2 class="text-center py-12">Støt os med merchandise!</h2>
  <div class="grid grid-cols-2 px-40 pb-12 gap-12">
     <div>
@@ -21,3 +23,5 @@ import stoet from '../assets/images/stoet.jpg';
     </div>
   </div>
 </section>
+
+
