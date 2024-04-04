@@ -41,16 +41,14 @@
     }
 
     h4 {
-    font-family: "montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-  }
+        font-family: "montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+   }
 
     p {
         font-family: 'montserrat', sans-serif;
-        font-style: normal, italic;
-        font-weight: 400, 700;
         font-size: 20px;
     }
   }
