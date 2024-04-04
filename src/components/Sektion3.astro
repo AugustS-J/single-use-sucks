@@ -1,7 +1,7 @@
 ---
 ---
 <section class="bg-primary-100 text-secondary-100">
-    <article>
+    <article class="missioninview">
         <h2 class="text-center py-20">Vores mission</h2>
         <div class="md:grid grid-cols-2 xl:grid-cols-3 gap-20 mx-20 xl:mx-44 mb-20 lg:mb-40">
             <div class="grid justify-items-center items-center mb-20 md:mb-0">
@@ -16,8 +16,8 @@
             </div>
         </div>
     </article>
-    <article>
-        <div class="md:grid grid-cols-2 mx-20 mb-20 md:mb-32 missionerinview">
+    <article class="missionerinview">
+        <div class="md:grid grid-cols-2 mx-20 mb-20 md:mb-32">
             <div class="grid justify-items-center mb-20 md:mb-0 mission1">
                 <h4 class="text-accent-100 italic">Mindre og bedre plastik</h4>
                 <img src="genbrug.svg" alt="" class="w-1/2 sm:w-2/5 xl:w-1/4 my-20 md:my-16">
@@ -34,22 +34,25 @@
                     <p>Derfor har vi udviklet gratis undervisningsmateriale til folkeskole-og gymnasieelever, der oplyser, uddanner og engagerer eleverne i kampen mod plastikforurening.</p>
                 </div>
             </div>
-            <div class="grid justify-items-center mx-20 xl:mx-96 pb-20">
-                <h4 class="text-accent-100 italic">#WeChooseReuse</h4>
-                <img src="bjerg.svg" alt="" class="w-1/2 sm:w-2/5 md:w-1/4 my-20 md:my-16">
-                <div class="md:w-2/5 xl:w-1/2">
-                    <p class="mb-5">Produktionen af engangsplastik har ført til stigende plastikforurening, øget CO2-udledning, enorme affaldsbjerge og er et ubæredygtigt træk på jordens begrænsede ressourcer.</p>
-                    <p>Genbrug er brug af det samme produkt igen og igen, i stedet for at produktet bliver til affald efter én gangs brug.</p>
-                </div>
+        </div>
+        <div class="grid justify-items-center mx-20 xl:mx-96 pb-20 mission3">
+            <h4 class="text-accent-100 italic">#WeChooseReuse</h4>
+            <img src="bjerg.svg" alt="" class="w-1/2 sm:w-2/5 md:w-1/4 my-20 md:my-16">
+            <div class="md:w-2/5 xl:w-1/2">
+                <p class="mb-5">Produktionen af engangsplastik har ført til stigende plastikforurening, øget CO2-udledning, enorme affaldsbjerge og er et ubæredygtigt træk på jordens begrænsede ressourcer.</p>
+                <p>Genbrug er brug af det samme produkt igen og igen, i stedet for at produktet bliver til affald efter én gangs brug.</p>
             </div>
         </div>
     </article>
 </section>
 <script>
     import {animate, stagger, inView, scroll} from "motion";
+    inView( ".missioninview" , () =>{
+        animate( ".missioninview", { opacity: [0, 1] }, { duration: 2 })
+    })
 
     inView(".missionerinview", ({ target }) =>{
-        animate(target.querySelectorAll(".mission1, .mission2"), { x: [-2000, 0] },
+        animate(target.querySelectorAll(".mission1, .mission2, .mission3"), { x: [-2000, 0] },
         { duration: 1, delay: stagger(0.5, { start: 0.25 })
     })
     })
