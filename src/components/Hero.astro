@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import Hero from "../assets/hero.svg";
 import Heromobil from "../assets/hero_mobil.svg";
 import Button from '../components/Button.astro';
+import Sektion1 from '../components/Sektion1.astro';
 ---
 
 
@@ -24,7 +25,7 @@ import Button from '../components/Button.astro';
          <Button variant="secondary"><p>Læs om hvordan du kan støtte!</p></Button>
         </div>
     </div>
-    
+            <Sektion1 />
     <!-- Vis Hero-billedet på desktop -->
     <div class="hidden md:block">
         <Image src={Hero} alt="skrald i hav" class="mt-36 w-full" />
@@ -34,6 +35,8 @@ import Button from '../components/Button.astro';
     <div class="md:hidden">
         <Image src={Heromobil} alt="skrald i hav" class="" />
     </div>
+
+
 </section>
 
 
